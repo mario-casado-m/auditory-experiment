@@ -170,6 +170,6 @@ if __name__ == "__main__":
 		del sounds[sounds.index(entry)]
 		clear()
 		time.sleep(2)
-	text = center_text(["El experimento ha terminado.", "Muchas gracias por participar", "No olvides enviar la carpeta generada a una de las siguientes direcciones.", "Anota la dirección antes de cerrar el experimento", "maria.ruiz@partner.samsung.com", "m.casado@partner.samsung.com", ])
-	print("\n\n", "{}{}{}{}{}{}".format(text[0], text[1], text[2], text[3], text[4], text[5]))
+	text = center_text(["El experimento ha terminado.", "Muchas gracias por participar", "No olvides enviar la carpeta generada a una de las siguientes direcciones.", "Anota la dirección antes de cerrar el experimento", "email@domain.scope"])
+	print("\n\n", "{}".format('\n'.join(str(line) for line in text)))
 	input("\n\n{}".format(center_text("Pulsa cualquier tecla para salir")))
